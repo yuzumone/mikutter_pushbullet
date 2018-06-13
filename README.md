@@ -3,16 +3,12 @@
 mikutterのMentionとFavoriteとRetweetイベントをPushbulletで通知します．
 
 ## インストール
-cloneしたら
 ```sh
+$ mkdir -p ~/.mikutter/plugin
 $ cd ~/.mikutter/plugin/
-$ git clone https://github.com/yuzumone/mikutter_pushbullet
+$ git clone https://github.com/yuzumone/mikutter_pushbullet.git
+& bundle install
 ```
-PushbulletのAPIを使うのにwashbulletを使っているので
-```sh
-$ gem install washbullet
-```
-とかもしてください．
 
 ## 使い方
 アクセストークンと通知を送るデバイスのIDが必要です．  
