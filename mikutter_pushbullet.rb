@@ -23,15 +23,17 @@ Plugin.create(:mikutter_pushbullet) do
   end
 
   on_favorite do |service, user, msg|
-    title = "Favorite by " + user.idname
-    client.push_note(
-      receiver: :device,
-      identifier: UserConfig[:pushbullet_device],
-      params: {
-        title: title,
-        body: msg.description
-      }
-    )
+    if !user.me?
+      title = "Favorite by " + user.idname
+      client.push_note(
+        receiver: :device,
+        identifier: UserConfig[:pushbullet_device],
+        params: {
+          title: title,
+          body: msg.description
+        }
+      )
+    end
   end
 
   on_retweet do |msg|
