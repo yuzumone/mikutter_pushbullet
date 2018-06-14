@@ -7,7 +7,7 @@ mikutterのMentionとFavoriteとRetweetイベントをPushbulletで通知しま�
 $ mkdir -p ~/.mikutter/plugin
 $ cd ~/.mikutter/plugin/
 $ git clone https://github.com/yuzumone/mikutter_pushbullet.git
-& bundle install
+$ bundle install
 ```
 
 ## 使い方
