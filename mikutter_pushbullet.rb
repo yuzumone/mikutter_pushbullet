@@ -24,7 +24,7 @@ Plugin.create(:mikutter_pushbullet) do
 
   on_favorite do |service, user, msg|
     if !user.me?
-      title = "Favorite by " + user.idname
+      title = "Favorited by " + user.idname
       client.push_note(
         receiver: :device,
         identifier: UserConfig[:pushbullet_device],
