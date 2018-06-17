@@ -7,11 +7,11 @@ mikutterのMentionとFavoriteとRetweetイベントをPushbulletで通知しま�
 $ mkdir -p ~/.mikutter/plugin
 $ cd ~/.mikutter/plugin/
 $ git clone https://github.com/yuzumone/mikutter_pushbullet.git
-$ bundle install
 ```
 
 ## 使い方
-アクセストークンと通知を送るデバイスのIDが必要です．  
+アクセストークンのみを設定した場合，すべてのデバイスに通知を送ります．  
+デバイスのIDも設定した場合，設定した端末にのみ通知を送ります．  
 アクセストークンはPushbulletの設定画面で確認できます．  
 デバイスIDは以下のコマンド実行で確認してください．
 ```sh
